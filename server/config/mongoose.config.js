@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
-const username = encodeURIComponent('<username>');
-const password = encodeURIComponent('<password>');
-const clusterUrl = 'cluster0.ilezabu.mongodb.net';
-const dbname = '<dbname>';
+const username = encodeURIComponent('<username>');     /*Replace it with your username*/
+const password = encodeURIComponent('<password>');     /*Replace it with your password*/
+const clusterUrl = '<clusterurl>';                     /*Replace it with your clusterurl*/
+const dbname = '<dbname>';                             /*Replace it with your database name*/
 const uri = `mongodb+srv://${username}:${password}@${clusterUrl}/${dbname}?retryWrites=true&w=majority`;
 
 mongoose.connect(uri, {
